@@ -109,7 +109,6 @@ body {
 }
 
 .left-top {
-  height: 258px;
   margin-bottom: 24px;
   padding: 40px;
   flex-direction: column;
@@ -122,7 +121,6 @@ body {
 }
 
 .left-bottom {
-  height: 258px;
   padding: 40px;
   flex-direction: column;
   justify-content: flex-end;
@@ -201,28 +199,49 @@ body {
   width: 572px;
   margin-bottom: 24px;
   outline: 1px solid blue;
+  border-radius: 15px;
 }
 
 .services-card:not(:nth-child(2n)) {
   margin-right: 24px;
 }
 
-.services-card-wrap {
-  padding-left: 45px;
+.services-card-wrap-text {
+  padding: 45px;
 }
 
 .services-title {
   margin: 0;
-  margin-top: 26px;
-  margin-bottom: 5px;
 }
 
 .services-card-text {
   margin: 0;
-  margin-bottom: 35px;
 }
 
+.services-card-wrap::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 165px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.services-card-wrap-img1::before {
+  background-image: url(../img/ser-1.png);
+}
+
+.services-card-wrap-img2::before {
+  background-image: url(../img/ser-2.png);
+}
+
+.services-card-wrap-img3::before {
+  background-image: url(../img/ser-3.png);
+}
+
+.services-card-wrap-img4::before {
+  background-image: url(../img/ser-4.png);
+}
 
 /* advantages */
 
@@ -232,8 +251,12 @@ body {
 
 .advantages-list-item {
   width: 276px;
+  padding: 45px;
   margin-bottom: 22px;
   outline: 1px solid blue;
+  background-position: 40px 10px;
+  background-repeat: no-repeat;
+  padding-top: 85px;
 }
 
 .advantages-list-item:not(:nth-child(4n)) {
@@ -243,7 +266,38 @@ body {
 .advantages-list-text {
   margin: 0;
   margin-bottom: 32px;
-  padding-left: 45px;
+}
+
+.advantages-list-item-icon1 {
+  background-image: url(../img/adv-1.svg);
+}
+
+.advantages-list-item-icon2 {
+  background-image: url(../img/adv-2.svg);
+}
+
+.advantages-list-item-icon3 {
+  background-image: url(../img/adv-3.svg);
+}
+
+.advantages-list-item-icon4 {
+  background-image: url(../img/adv-4.svg);
+}
+
+.advantages-list-item-icon5 {
+  background-image: url(../img/adv-5.svg);
+}
+
+.advantages-list-item-icon6 {
+  background-image: url(../img/adv-6.svg);
+}
+
+.advantages-list-item-icon7 {
+  background-image: url(../img/adv-7.svg);
+}
+
+.advantages-list-item-icon8 {
+  background-image: url(../img/adv-8.svg);
 }
 
 /* accom */
