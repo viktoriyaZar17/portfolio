@@ -598,33 +598,43 @@ body {
   margin-bottom: 100px;
 }
 
-.questions__item {
-  padding-top: 34px;
-  padding-bottom: 26px;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #CACACA;
-}
-
-.questions__item:first-child {
-  border-top: 1px solid #CACACA;
-}
-
 .questions__title {
   margin-bottom: 32px;
 }
 
+.questions__item {
+  margin-top: -1px;
+  padding-top: 34px;
+  padding-bottom: 26px;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #CACACA;
+  transition: color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+}
+
+.questions__item:first-child {
+  border-color: #CACACA;
+}
+
 .questions__item ellipse {
   fill: #CACACA;
+  transition: fill 0.3s ease-in-out;
 }
 
 .questions__item path {
   fill: var(--black-color);
+  transition: fill 0.3s ease-in-out;
+}
+
+.questions__item svg {
+  transition: transform 0.3s ease-in-out;
 }
 
 .questions__item:focus {
   color: var(--orange-color);
-  border-bottom-color: var(--orange-color);
+  border-color: var(--orange-color);
 }
 
 .questions__item:focus ellipse {
@@ -650,8 +660,7 @@ body {
 
 .questions__item:active {
   color: var(--black-color);
-  border-bottom-color: #CACACA;
-  border-top-color: #CACACA;
+  border-color: #CACACA;
 }
 
 .questions__item:active ellipse {
@@ -660,6 +669,10 @@ body {
 
 .questions__item:active path {
   fill: var(--black-color);
+}
+
+.questions__item:active svg {
+  transform: rotate(45deg);
 }
 
 /* footer */
@@ -699,26 +712,30 @@ body {
   color: #CACACA;
 }
 
-.footer__item {
+.footer__social-item_int {
   outline: 2px solid transparent;
   outline-offset: 5px;
   transition: outline-color 0.3s ease-in-out;
 }
 
-.footer__item path {
+.footer__social-item_int path {
   fill: #666666;
   transition: fill 0.3s ease-in-out;
 }
 
-.footer__item:focus {
+.footer__social-item_int:focus {
   outline-color: var(--orange-color);
 }
 
-.footer__item:hover path {
+.footer__social-item_int:hover path {
   fill: var(--orange-color);
 }
 
-.footer__item:active path {
+.footer__social-item_int:active {
+  outline-color: transparent;
+}
+
+.footer__social-item_int:active path {
   fill: var(--dark-orange-color);
 }
 
