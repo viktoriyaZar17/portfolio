@@ -1,0 +1,160 @@
+@media (max-width: 1600px) {
+
+  .card-wrap__right_footer {
+    padding-left: 45px;
+  }
+
+  .descr__wrap {
+    border-radius: 32px;
+  }
+
+}
+
+@media (max-width: 1366px) {
+
+  .nav__list {
+    margin-right: 68px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+
+  .container {
+    padding: 0 50px;
+  }
+
+  .nav_header {
+    display: none;
+  }
+
+  .burger {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 23px;
+    color: var(--black-color);
+  }
+
+  .burger__line {
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 3px;
+    background-color: currentColor;
+    transform: translateX(-50%);
+  }
+
+  .burger__line:nth-child(1) {
+    top: 17px;
+  }
+
+  .burger__line:nth-child(2) {
+    top: 50%;
+    transform: translate(-50%, -120%);
+  }
+
+  .burger__line:nth-child(3) {
+    bottom: 22px;
+  }
+
+  .header__logo {
+    max-width: 150px;
+    margin-right: initial;
+  }
+
+  .header__container {
+    padding-top: 12px;
+    justify-content: space-between;
+  }
+
+  .descr__title {
+    font-size: 60px;
+    line-height: 73.14px;
+  }
+
+  .descr__wrap {
+    padding: 155px 80px;
+    margin-bottom: 41px;
+  }
+
+  .descr__text {
+    margin-bottom: 55px;
+    font-size: 20px;
+    line-height: 24.38px;
+  }
+
+  .about-us__text {
+    margin-bottom: 58px;
+  }
+
+  .card-wrap_about-us {
+    flex-direction: column;
+    margin-bottom: 82px;
+  }
+
+  .card-wrap__left_about-us {
+    width: 100%;
+    margin-bottom: 32px;
+    min-height: 640px;
+  }
+
+  .card-wrap__item_about-us {
+    padding-left: 314px;
+    background-position-x: 76px;
+  }
+
+  .card-wrap__list_about-us {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .stages__text {
+    max-width: 437px;
+    margin-bottom: 27px;
+  }
+
+  .stages__img {
+    object-fit: cover;
+    border-radius: 30px;
+  }
+
+  .card-wrap_stages {
+    margin-bottom: 78px;
+  }
+
+  .card-wrap__left_stages {
+    padding-right: 47px;
+  }
+
+  .questions__list {
+    margin-bottom: 74px;
+  }
+
+  .question__subtitle {
+    max-width: 756px;
+    font-size: 20px;
+  }
+
+  .card-wrap__left_footer {
+    margin-right: 59px;
+  }
+
+  .card-wrap__right_footer {
+    display: none;
+  }
+
+  .nav__list_footer {
+
+  }
+
+  .footer__input,
+  .footer__textarea  {
+    width: 541px;
+  }
+
+  .footer__btn {
+    padding: 19px 38px;
+  }
+
+}
