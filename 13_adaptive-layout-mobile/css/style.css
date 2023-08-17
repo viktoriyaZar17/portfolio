@@ -124,6 +124,10 @@ body {
   border-radius: 16px;
 }
 
+.visually-hidden {
+  visibility: hidden;
+}
+
 :root {
   --orange-color: #FF9900;
   --black-color: #000000;

@@ -337,11 +337,6 @@
       background-size: 64px 49px;
   }
 
-  .card-wrap__item_img1,
-    .card-wrap__item_img2 {
-      background-size: 64px 49px;
-  }
-
   .card-wrap__item_about-us {
     background-position-x: 10px;
     padding-top: 25px;
@@ -403,12 +398,17 @@
     margin-left: 27px;
   }
 
-}
-*/
+}*/
+
 @media (max-width: 500px) {
 
   .container {
     padding: 0 15px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    line-height: 29.26px;
   }
 
   .header__logo {
@@ -423,11 +423,15 @@
   .descr__title {
     margin-bottom: 7px;
     text-align: center;
+    font-size: 20px;
+    line-height: 24.83px;
   }
 
   .descr__text {
     text-align: center;
     margin-bottom: 34px;
+    line-height: 14.63px;
+    font-size: 12px;
   }
 
   .descr__wrap {
@@ -440,8 +444,10 @@
   }
 
   .btn__descr {
-    padding: 13px 29px;
     border-radius: 9px;
+    padding: 13px 29px;
+    line-height: 14.63px;
+    font-size: 12px;
   }
 
   .about-us__text {
@@ -521,6 +527,12 @@
     margin-bottom: 19px;
   }
 
+  .stages__text {
+    max-width: 280px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
   .stages__step {
     font-size: 14px;
     line-height: 17.07px;
@@ -528,6 +540,7 @@
 
   .stages__list {
     margin-bottom: 15px;
+    gap: 12px;
   }
 
   .stages__img {
@@ -564,7 +577,13 @@
 
   .stages__btn_color-wb {
     padding: 10px 32px;
+    font-size: 12px;
+    line-height: 14.63px;
     border-radius: 8px;
+  }
+
+  .btn_white {
+    margin-left: 0;
   }
 
   .questions__title {
@@ -603,12 +622,14 @@
   }
 
   .footer__input {
+    width: 290px;
     padding-left: 19px;
     font-size: 14px;
     line-height: 32px;
   }
 
   .footer__textarea {
+    width: 290px;
     padding-left: 19px;
     padding-top: 15px;
     margin-bottom: 25px;
