@@ -169,7 +169,7 @@ body {
     color 0.3s ease-in-out;
 }
 
-.nav__link:focus {
+.nav__link:focus-visible {
   outline: 2px solid var(--orange-color);
 }
 
@@ -209,7 +209,7 @@ body {
   fill: var(--black-color);
 }
 
-.header__btn:focus{
+.header__btn:focus-visible{
   outline: 2px solid var(--orange-color);
   outline-offset: 2px;
 }
@@ -282,7 +282,8 @@ body {
   transition: background-color 0.3s ease-in-out;
 }
 
-.btn__descr:focus {
+.btn__descr:focus-visible {
+  outline: none;
   background-color: var(--light-orange-color);
 }
 
@@ -358,7 +359,7 @@ body {
     outline 0.3s ease-in-out;
 }
 
-.card-wrap__btn_about-us:focus {
+.card-wrap__btn_about-us:focus-visible {
   outline: none;
   background-color: var(--orange-color);
 }
@@ -533,7 +534,7 @@ body {
     color 0.3s ease-in-out;
 }
 
-.stages__step:focus {
+.stages__step:focus-visible {
   outline-color: var(--orange-color);
 }
 
@@ -568,7 +569,8 @@ body {
   transition: background-color 0.3s ease-in-out;
 }
 
-.stages__btn_color-orange:focus {
+.stages__btn_color-orange:focus-visible {
+  outline: none;
   background-color: var(--light-orange-color);
 }
 
@@ -586,7 +588,7 @@ body {
     outline 0.3s ease-in-out;
 }
 
-.stages__btn_color-wb:focus {
+.stages__btn_color-wb:focus-visible {
   outline: none;
   background-color: #666666;
   color: #fff;
@@ -658,6 +660,18 @@ body {
 }
 
 .questions__item:focus path {
+  fill: white;
+}
+
+.questions__btn:focus {
+  outline: none;
+}
+
+.questions__btn:focus ellipse {
+  fill: var(--orange-color);
+}
+
+.questions__btn:focus path {
   fill: white;
 }
 
@@ -739,7 +753,7 @@ body {
   transition: fill 0.3s ease-in-out;
 }
 
-.footer__social-item_int:focus {
+.footer__social-item_int:focus-visible {
   outline-color: var(--orange-color);
 }
 
@@ -795,6 +809,7 @@ body {
 }
 
 .footer__input:focus {
+  outline: none;
   background-color: #666666;
 }
 
@@ -820,6 +835,7 @@ body {
 }
 
 .footer__textarea:focus {
+  outline: none;
   background-color: #666666;
 }
 
@@ -837,7 +853,8 @@ body {
   transition: background-color 0.3s ease-in-out;
 }
 
-.footer__btn:focus {
+.footer__btn:focus-visible {
+  outline: none;
   background-color: var(--light-orange-color);
 }
 
@@ -847,4 +864,18 @@ body {
 
 .footer__btn:active {
   background-color: var(--dark-orange-color);
+}
+
+.nav__link_footer {
+  transition: color 0.3s ease-in-out;
+}
+
+.nav__link_footer:hover {
+  border: none;
+  color: var(--orange-color);
+}
+
+.nav__link_footer:active {
+  border: none;
+  color: var(--dark-orange-color);
 }
