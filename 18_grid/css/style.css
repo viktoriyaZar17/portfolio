@@ -245,6 +245,38 @@ img {
 /* courses */
 
 
+.courses__cards {
+  padding: 0;
+  list-style: none;
+}
+
+.courses__card {
+  height: 100%;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  background-color: rgba(237, 240, 249, 1);
+}
+
+.courses__card-body {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.courses__img {
+  border-radius: 20px 20px 0 0;
+}
+
+.courses__btn {
+  padding: 21px 60px;
+  border-radius: 21px;
+  font-size: 16px;
+  line-height: 18.75px;
+  color: #fff;
+  background-color: var(--blue);
+}
+
+/*
 .courses__wrap {
   margin-bottom: 80px;
 }
@@ -307,6 +339,7 @@ img {
   color: #fff;
   background-color: var(--blue);
 }
+*/
 
 
 /* footer */
@@ -331,5 +364,8 @@ img {
 }
 
 .footer__copy {
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 15px;
   color: #fff;
 }
