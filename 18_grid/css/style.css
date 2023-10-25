@@ -68,7 +68,6 @@ img {
 
 .flex {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .section-title {
@@ -123,8 +122,9 @@ img {
   background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
 }
 
-.hero__wrap {
+.hero__left {
   padding-top: 129px;
+  padding-bottom: 132px;
 }
 
 .hero__title {
@@ -145,7 +145,6 @@ img {
 }
 
 .hero__btn {
-  margin-bottom: 15px;
   font-size: 18px;
   line-height: 21.09px;
   padding: 24px 77px;
@@ -155,8 +154,9 @@ img {
 }
 
 .hero__img {
-  padding-top: 15px;
-  padding-bottom: 7px;
+  background-image: url(../img/descr-grid.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
@@ -176,7 +176,7 @@ img {
 }
 
 .advantages__title {
-  width: 380px;
+  max-width: 380px;
   margin-bottom: 17px;
   color: var(--midl-blue);
 }
@@ -219,13 +219,19 @@ img {
 
 .teachers__wrap {
   padding-top: 74px;
-  padding-bottom: 73px;
+  padding-bottom: 57px;
   margin-bottom: 75px;
 }
 
+.teachers__list {
+  padding: 0;
+  list-style: none;
+}
+
 .teachers__img {
+  width: 100%;
   margin-bottom: 27px;
-  border-radius: 21px 21px 0 0;
+  border-radius: 23px 23px 0 0;
 }
 
 .teachers__title {
@@ -263,6 +269,7 @@ img {
 }
 
 .courses__card {
+  flex-direction: column;
   height: 100%;
   border-radius: 20px;
   background-color: rgba(237, 240, 249, 1);
@@ -271,6 +278,7 @@ img {
 .courses__card-body {
   min-height: 300px;
   flex-direction: column;
+  flex-basis: 100%;
   align-items: flex-start;
   justify-content: space-between;
   padding: 30px;
@@ -285,22 +293,23 @@ img {
 }
 
 .courses__img {
-  position: relative;
-  width: 539px;
+  width: 100%;
   height: 180px;
   border-radius: 20px 20px 0 0;
 }
 
-.courses__svg {
+.courses__icon {
   position: absolute;
   top: 9px;
-  right: 90px;
+  right: 20px;
+}
+
+
+.courses__svg {
+  vertical-align: middle;
 }
 
 .courses__span {
-  position: absolute;
-  top: 13px;
-  right: 19px;
   font-size: 16px;
   line-height: 19px;
   color: white;
