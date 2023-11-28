@@ -8,11 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  font-family: "OpenSans", sans-serif;
-  font-weight: 400;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -52,6 +47,11 @@ address {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+}
+
+body {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 400;
 }
 
 :root {
@@ -157,13 +157,13 @@ address {
 
 .nav__link:focus-visible {
   outline: none;
-  color: var(--light-lilac);
-}
-
-.nav__link:hover {
   padding: 2px 6px;
   background-color: var(--dark-lilac);
   color: var(--white);
+}
+
+.nav__link:hover {
+  color: var(--light-lilac);
 }
 
 .nav__link:active {
@@ -179,28 +179,26 @@ address {
 
 .header__btn:focus-visible {
   outline: none;
-}
-
-.header__btn:focus-visible path {
-  fill: var(--light-lilac);
-}
-
-.header__btn:focus-visible rect {
-  fill: var(--light-lilac);
-}
-
-.header__btn:hover {
   padding: 4px;
   background-color: var(--dark-lilac);
 }
 
-.header__btn:hover path {
+.header__btn:focus-visible path {
   fill: var(--white);
 }
 
-.header__btn:hover rect {
+.header__btn:focus-visible rect {
   fill: var(--white);
 }
+
+.header__btn:hover path {
+  fill: var(--light-lilac);
+}
+
+.header__btn:hover rect {
+  fill: var(--light-lilac);
+}
+
 
 .header__btn:active {
   background-color: inherit;
@@ -255,19 +253,23 @@ address {
   font-weight: 700;
   line-height: 25px;
   color: var(--white);
+  outline: 2px solid transparent;
+  outline-offset: 3px;
+  transition: all 0.3s ease-in-out;
 }
 
 .hero__link:focus-visible {
-  outline: 2px solid var(--light-lilac);
-  outline-offset: 3px;
+  outline: 3px solid var(--shine-lilac);
+  outline-offset: inherit;
 }
 
 .hero__link:hover {
-  outline: 3px solid var(--shine-lilac);
+  outline: 2px solid var(--light-lilac);
 }
 
 .hero__link:active {
   outline: 3px solid var(--shine-lilac);
+  outline-offset: inherit;
   background-color: var(--dark-lilac);
 }
 
@@ -526,14 +528,14 @@ address {
 
 .evenst__link:focus-visible {
   outline: none;
-  color: var(--dark-lilac);
-  border-bottom-color: var(--dark-lilac);
-}
-
-.evenst__link:hover {
   padding: 5px 8px;
   background-color: var(--lilac);
   color: var(--white);
+}
+
+.evenst__link:hover {
+  color: var(--dark-lilac);
+  border-bottom-color: var(--dark-lilac);
 }
 
 .events__span:hover {
@@ -612,10 +614,9 @@ address {
   font-weight: 700;
   line-height: 25px;
   color: var(--lilac);
-  transition: color 0.3s ease-in-out,
-    background-color 0.3s ease-in-out,
-    outline 0.3s ease-in-out,
-    border-color 0.3s ease-in-out;
+  outline: 2px solid transparent;
+  outline-offset: 3px;
+  transition: all 0.3s ease-in-out
 }
 
 .hidden-on-small-screens {
@@ -658,7 +659,6 @@ address {
 
 .contacts__btn:hover {
   outline: 2px solid var(--light-lilac);
-  outline-offset: 3px;
 }
 
 .contacts__btn:active {

@@ -26,7 +26,7 @@
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1223px) {
 
   .header__wrap {
     flex-wrap: wrap;
@@ -272,7 +272,7 @@
 
 }
 
-@media (max-width: 321px) {
+@media (max-width: 360px) {
 
   .section-offset {
     margin-bottom: 50px;
@@ -285,6 +285,10 @@
   .header__right svg {
     width: 18px;
     height: 18px;
+  }
+
+  .header__logo {
+    width: 55%;
   }
 
   .header__mid {
@@ -457,6 +461,14 @@
   .footer__wrap {
     flex-direction: column-reverse;
     justify-content: space-evenly;
+  }
+
+  .footer__left {
+    text-align: center;
+  }
+
+  .footer__logo {
+    width: 55%;
   }
 
   .footer__link svg {
