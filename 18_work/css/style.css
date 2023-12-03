@@ -255,7 +255,9 @@ body {
   color: var(--white);
   outline: 2px solid transparent;
   outline-offset: 3px;
-  transition: all 0.3s ease-in-out;
+  transition: outline 0.3s ease-in-out,
+    outline-offset 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
 }
 
 .hero__link:focus-visible {
@@ -616,7 +618,11 @@ body {
   color: var(--lilac);
   outline: 2px solid transparent;
   outline-offset: 3px;
-  transition: all 0.3s ease-in-out
+  transition: outline 0.3s ease-in-out,
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out,
+    outline-offset 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
 }
 
 .hidden-on-small-screens {
